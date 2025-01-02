@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>le juste prix</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="objet">
+      <div class="form-group2">
+        <div id="manche"></div>
+        <div id="haute"></div>
+        <div id="triangle"></div>
+        <div id="lecercle"></div>
+        <div id="mec" >
+          <div id="tete">X_X</div>
+          <div id="lesBras"></div>
+          <div id="lespieds"></div>
+          <div id="lecorp"></div>
+        </div>
+        <div id="pied"></div>
+        <div id="surlePondu"></div>
+        <div id="mort"></div>
+        <div id="bondu"></div>
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="prix-propose" class="prix-propose"
+          >Un mot de 14 lettres</label
+        >
+        <div class="display">
+          <div class="div_lettre1" data-position="0">-</div>
+          <div class="div_lettre2" data-position="1">-</div>
+          <div class="div_lettre3" data-position="2">-</div>
+          <div class="div_lettre4" data-position="3">-</div>
+          <div class="div_lettre5" data-position="4">-</div>
+          <div class="div_lettre6" data-position="5">-</div>
+          <div class="div_lettre7" data-position="6">-</div>
+          <div class="div_lettre8" data-position="7">-</div>
+          <div class="div_lettre9" data-position="8">-</div>
+          <div class="div_lettre10" data-position="9">-</div>
+          <div class="div_lettre11" data-position="10">-</div>
+          <div class="div_lettre12" data-position="11">-</div>
+          <div class="div_lettre13" data-position="12">-</div>
+          <div class="div_lettre14" data-position="13">-</div>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <div class="keyboard__row">
+          <div class="key--letter" data-char="Q" onclick="pressKey(this)">Q</div>
+          <div class="key--letter" data-char="W" onclick="pressKey(this)">W</div>
+          <div class="key--letter" data-char="E" onclick="pressKey(this)">E</div>
+          <div class="key--letter" data-char="R" onclick="pressKey(this)">R</div>
+          <div class="key--letter" data-char="T" onclick="pressKey(this)">T</div>
+          <div class="key--letter" data-char="Y" onclick="pressKey(this)">Y</div>
+          <div class="key--letter" data-char="U" onclick="pressKey(this)">U</div>
+          <div class="key--letter" data-char="I" onclick="pressKey(this)">I</div>
+          <div class="key--letter" data-char="O" onclick="pressKey(this)">O</div>
+        </div>
+        <div class="keyboard__row">
+          <div class="key--letter" data-char="A" onclick="pressKey(this)">A</div>
+          <div class="key--letter" data-char="S" onclick="pressKey(this)">S</div>
+          <div class="key--letter" data-char="D" onclick="pressKey(this)">D</div>
+          <div class="key--letter" data-char="F" onclick="pressKey(this)">F</div>
+          <div class="key--letter" data-char="G" onclick="pressKey(this)">G</div>
+          <div class="key--letter" data-char="H" onclick="pressKey(this)">H</div>
+          <div class="key--letter" data-char="J" onclick="pressKey(this)">J</div>
+          <div class="key--letter" data-char="K" onclick="pressKey(this)">K</div>
+          <div class="key--letter" data-char="L" onclick="pressKey(this)">L</div>
+        </div>
+        <div class="keyboard__row">
+          <div class="key--letter" data-char="Z" onclick="pressKey(this)">Z</div>
+          <div class="key--letter" data-char="X" onclick="pressKey(this)">X</div>
+          <div class="key--letter" data-char="C" onclick="pressKey(this)">C</div>
+         
+          <div class="key--letter" data-char="V" onclick="pressKey(this)">V</div>
+          <div class="key--letter" data-char="B" onclick="pressKey(this)">B</div>
+          <div class="key--letter" data-char="N" onclick="pressKey(this)">N</div>
+          <div class="key--letter" data-char="M" onclick="pressKey(this)">M</div>
+          <div class="key--letter" data-char="P" onclick="pressKey(this)">P</div> 
+          <div class="key--letter" data-char="-" onclick="pressKey(this)">-</div> 
+        </div>
+        <div class="keyboard__row">
+        <div class="key--letter" data-char="ç" onclick="pressKey(this)">ç</div></div>
+        <p class="text">
+          Trouvez le mots cacher et tentez de gagner la partis sinon...!!!
+        </p> 
+        <button type="submit" id="bouton" class="btn__submit">reset</button>
+      </div>
+      <input type="text" id="searchInput" placeholder="Rechercher un mots.." oninput="searchMots()">
+      <div id="div__validation" class="success"></div>
+      <div id="div__error" class="error"></div>
+      <div id="tentative"></div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
